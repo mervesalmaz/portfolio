@@ -5,236 +5,469 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Merve Salmaz — Senior Product Manager</title>
 <meta name="description" content="Senior Product Manager with 8+ years in fintech and AI.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { font-family: 'DM Sans', system-ui, sans-serif; background: #FAFAF5; color: #0E1B2C; font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-.wrap { max-width: 1080px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 3rem); }
-nav { background: #1B3FE4; position: sticky; top: 0; z-index: 100; }
-nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 58px; }
-.nav-name { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-size: 1.1rem; color: #F5D130; }
-.nav-links { display: flex; gap: 1.75rem; list-style: none; }
-.nav-links a { font-size: 0.78rem; letter-spacing: 0.05em; color: rgba(255,255,255,0.65); text-decoration: none; }
-.nav-links a:hover { color: #F5D130; }
-.nav-cta { background: #F5D130; color: #0E1B2C; font-size: 0.78rem; font-weight: 500; text-decoration: none; padding: 0.45rem 1.1rem; border-radius: 100px; }
-.nav-cta:hover { opacity: 0.85; }
-#hero { background: #1B3FE4; padding: 5rem 0 0; }
-.hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: end; }
-.hero-tag { display: inline-block; background: #F5D130; color: #0E1B2C; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em; padding: 0.35rem 0.85rem; border-radius: 100px; margin-bottom: 1.5rem; }
-.hero-h1 { font-family: 'Fraunces', Georgia, serif; font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; color: #FAFAF5; margin-bottom: 0.75rem; }
-.hero-h1 em { font-style: italic; color: #F5D130; font-weight: 400; }
-.hero-sub { font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 2rem; max-width: 420px; }
-.hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 3rem; }
-.btn-solid { background: #F5D130; color: #0E1B2C; font-size: 0.82rem; font-weight: 500; padding: 0.65rem 1.5rem; border-radius: 100px; text-decoration: none; }
-.btn-solid:hover { opacity: 0.85; }
-.btn-outline { background: transparent; color: #FAFAF5; font-size: 0.82rem; padding: 0.65rem 1.5rem; border-radius: 100px; text-decoration: none; border: 1.5px solid rgba(255,255,255,0.35); }
-.hero-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
-.hcard { border-radius: 16px; padding: 1.5rem; }
-.hcard-a { background: #F5D130; }
-.hcard-b { background: #F25C4B; }
-.hcard-c { background: rgba(255,255,255,0.1); border: 1.5px solid rgba(255,255,255,0.18); }
-.hcard-d { background: #F0336B; }
-.hcard-n { font-family: 'Fraunces', Georgia, serif; font-size: 2rem; font-weight: 700; line-height: 1; margin-bottom: 0.35rem; }
-.hcard-a .hcard-n { color: #0E1B2C; } .hcard-a .hcard-l { color: #0E1B2C; }
-.hcard-b .hcard-n { color: #FAFAF5; } .hcard-b .hcard-l { color: #FAFAF5; }
-.hcard-c .hcard-n { color: #F5D130; font-style: italic; font-size: 1.4rem; } .hcard-c .hcard-l { color: rgba(255,255,255,0.6); }
-.hcard-d .hcard-n { color: #FAFAF5; font-style: italic; font-size: 1.3rem; } .hcard-d .hcard-l { color: #FAFAF5; }
-.hcard-l { font-size: 0.7rem; letter-spacing: 0.05em; line-height: 1.4; }
-.blob-strip { background: #1B3FE4; height: 3rem; position: relative; overflow: hidden; }
-.blob-strip::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100%; background: #FAFAF5; border-radius: 40px 40px 0 0; }
-section { padding: 5rem 0; }
-.sec-row { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 2.5rem; }
-.sec-title { font-family: 'Fraunces', Georgia, serif; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em; color: #0E1B2C; }
-.sec-title em { font-style: italic; color: #1B3FE4; font-weight: 400; }
-.sec-num { font-size: 0.7rem; letter-spacing: 0.1em; color: #aaa; }
-.about-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
-.about-body p { font-size: 0.9rem; color: #444; line-height: 1.9; margin-bottom: 0.9rem; }
-.about-body strong { color: #0E1B2C; font-weight: 500; }
-.about-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
-.apill { font-size: 0.72rem; letter-spacing: 0.04em; padding: 0.35rem 0.85rem; border-radius: 100px; font-weight: 500; }
-.apill-blue { background: #1B3FE4; color: #FAFAF5; }
-.apill-yellow { background: #F5D130; color: #0E1B2C; }
-.apill-coral { background: #F25C4B; color: #FAFAF5; }
-.tl-row { display: grid; grid-template-columns: 110px 1fr; gap: 1rem; padding: 0.9rem 0; border-bottom: 1.5px solid #EEEEE6; align-items: start; }
-.tl-row:first-child { border-top: 1.5px solid #EEEEE6; }
-.tl-yr { font-size: 0.7rem; color: #aaa; letter-spacing: 0.04em; padding-top: 2px; }
-.tl-role { font-size: 0.88rem; font-weight: 500; color: #0E1B2C; margin-bottom: 0.15rem; }
-.tl-co { font-size: 0.76rem; color: #888; }
-.tl-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 0.4rem; vertical-align: middle; position: relative; top: -1px; }
-.work-section { background: #F4F3EE; border-radius: 24px; margin: 0 clamp(1.25rem, 5vw, 3rem); }
-.work-inner { padding: 4rem 3rem; }
-.proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-.proj { border-radius: 16px; padding: 2rem; border: 1.5px solid #E8E7E0; background: #FAFAF5; transition: border-color 0.2s, transform 0.2s; }
-.proj:hover { border-color: #1B3FE4; transform: translateY(-2px); }
-.proj-accent { width: 32px; height: 4px; border-radius: 2px; margin-bottom: 1.25rem; }
-.proj-type { font-size: 0.68rem; letter-spacing: 0.09em; color: #aaa; text-transform: uppercase; margin-bottom: 0.65rem; }
-.proj-title { font-family: 'Fraunces', Georgia, serif; font-size: 1.1rem; font-weight: 700; line-height: 1.25; margin-bottom: 0.75rem; color: #0E1B2C; }
-.proj-desc { font-size: 0.82rem; color: #555; line-height: 1.75; margin-bottom: 1.25rem; }
-.proj-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1.25rem; }
-.proj-tag { font-size: 0.66rem; letter-spacing: 0.04em; padding: 0.2rem 0.6rem; border-radius: 100px; border: 1.5px solid #E0DFD8; color: #777; }
-.proj-metric { font-size: 0.78rem; color: #555; padding-top: 0.85rem; border-top: 1.5px solid #EEEEE6; }
-.proj-metric span { color: #0E1B2C; font-weight: 500; }
-.demo-row { display: grid; grid-template-columns: 2fr 1.5fr auto; gap: 2rem; align-items: center; padding: 1.25rem 0; border-bottom: 1.5px solid #EEEEE6; }
-.demo-row:first-child { border-top: 1.5px solid #EEEEE6; }
-.demo-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 0.5rem; vertical-align: middle; position: relative; top: -1px; }
-.demo-title { font-size: 0.9rem; font-weight: 500; color: #0E1B2C; margin-bottom: 0.25rem; }
-.demo-desc { font-size: 0.8rem; color: #666; line-height: 1.6; }
-.demo-tech { font-size: 0.7rem; color: #aaa; line-height: 1.65; }
-.demo-link { font-size: 0.78rem; color: #1B3FE4; text-decoration: none; font-weight: 500; white-space: nowrap; border-bottom: 1.5px solid #1B3FE4; padding-bottom: 1px; }
-.stack-section { background: #1B3FE4; border-radius: 24px; margin: 0 clamp(1.25rem, 5vw, 3rem); padding: 3.5rem; }
-.stack-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
-.stack-card { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 1.1rem 1rem; border: 1.5px solid rgba(255,255,255,0.12); }
-.stack-cat { font-size: 0.65rem; letter-spacing: 0.08em; color: rgba(255,255,255,0.45); margin-bottom: 0.4rem; text-transform: uppercase; }
-.stack-name { font-size: 0.88rem; font-weight: 500; color: #FAFAF5; }
-.contact-blob { background: #F5D130; border-radius: 24px; padding: 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-.contact-h { font-family: 'Fraunces', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700; letter-spacing: -0.02em; color: #0E1B2C; line-height: 1.1; margin-bottom: 0.85rem; }
-.contact-h em { font-style: italic; font-weight: 400; }
-.contact-sub { font-size: 0.88rem; color: rgba(14,27,44,0.65); line-height: 1.75; }
-.clink { display: flex; justify-content: space-between; align-items: center; font-size: 0.88rem; color: #0E1B2C; text-decoration: none; padding: 1rem 0; border-bottom: 1.5px solid rgba(14,27,44,0.15); }
-.clink:first-child { border-top: 1.5px solid rgba(14,27,44,0.15); }
-.clink:hover { opacity: 0.6; }
-.clink-arr { color: rgba(14,27,44,0.4); }
-footer { padding: 1.75rem 0; display: flex; justify-content: space-between; }
-footer p { font-size: 0.73rem; color: #bbb; }
-.reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s ease; }
-.reveal.visible { opacity: 1; transform: none; }
-@media (max-width: 768px) {
-  .hero-inner, .about-wrap, .contact-blob { grid-template-columns: 1fr; }
-  .hero-cards { grid-template-columns: 1fr 1fr; }
-  .proj-grid { grid-template-columns: 1fr; }
-  .stack-grid { grid-template-columns: repeat(2, 1fr); }
-  .demo-row { grid-template-columns: 1fr; gap: 0.5rem; }
-  .work-inner { padding: 2.5rem 1.5rem; }
-  .stack-section, .work-section { margin: 0; border-radius: 0; }
-  .contact-blob { padding: 2.5rem; }
-  .nav-links { display: none; }
-}
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+  body { font-family: 'DM Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
 </style>
 </head>
-<body>
-<nav>
-  <div class="wrap">
-    <span class="nav-name">Merve Salmaz</span>
-    <ul class="nav-links">
-      <li><a href="#about">about</a></li>
-      <li><a href="#work">work</a></li>
-      <li><a href="#demos">demos</a></li>
-      <li><a href="#stack">stack</a></li>
-    </ul>
-    <a class="nav-cta" href="#contact">get in touch</a>
-  </div>
-</nav>
-<section id="hero">
-  <div class="wrap">
-    <div class="hero-inner">
-      <div>
-        <span class="hero-tag">Senior Product Manager — Fintech &amp; AI</span>
-        <h1 class="hero-h1">8 years shipping<br>products at the<br>edge of <em>AI &amp; fintech.</em></h1>
-        <p class="hero-sub">From LLM-powered safety platforms to investment infrastructure at scale — I build products at the intersection of complex systems, real users, and emerging technology.</p>
-        <div class="hero-btns">
-          <a class="btn-solid" href="#work">See my work</a>
-          <a class="btn-outline" href="#contact">Get in touch</a>
+<body class="min-h-screen bg-white">
+
+  <!-- Hero Section -->
+  <section class="bg-[#4646FF] px-6 py-16 md:px-12 md:py-24">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-16">
+        <h1 class="mb-8 max-w-4xl text-4xl md:text-5xl lg:text-6xl leading-tight text-white">
+          Hi, I'm <span class="italic">Merve</span> — building <span class="italic">AI</span> products in <span class="italic">fintech</span> 👋
+        </h1>
+        <p class="max-w-2xl text-lg text-white/90">
+          From LLM-powered safety platforms to investment infrastructure at scale — I build products at the intersection of complex systems, real users, and emerging technology.
+        </p>
+      </div>
+      <!-- Stats Cards -->
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div class="rounded-2xl bg-white/95 backdrop-blur-sm p-6 border-2 border-white/20 shadow-lg">
+          <div class="text-3xl font-bold text-[#4646FF]">8+</div>
+          <div class="mt-2 text-sm text-gray-600">Years in Product</div>
+        </div>
+        <div class="rounded-2xl bg-white/95 backdrop-blur-sm p-6 border-2 border-white/20 shadow-lg">
+          <div class="text-3xl font-bold text-[#4646FF]">4</div>
+          <div class="mt-2 text-sm text-gray-600">Industries: fintech, AI, HR tech, renewable energy</div>
+        </div>
+        <div class="rounded-2xl bg-white/95 backdrop-blur-sm p-6 border-2 border-white/20 shadow-lg">
+          <div class="text-3xl font-bold text-[#4646FF]">B2B</div>
+          <div class="mt-2 text-sm text-gray-600">Enterprise &amp; corporate focus</div>
+        </div>
+        <div class="rounded-2xl bg-white/95 backdrop-blur-sm p-6 border-2 border-white/20 shadow-lg">
+          <div class="text-3xl font-bold text-[#4646FF]">Istanbul</div>
+          <div class="mt-2 text-sm text-gray-600">Open to EU opportunities</div>
         </div>
       </div>
-      <div>
-        <div class="hero-cards">
-          <div class="hcard hcard-a"><div class="hcard-n">8+</div><div class="hcard-l">years in product</div></div>
-          <div class="hcard hcard-b"><div class="hcard-n">4</div><div class="hcard-l">industries: fintech, AI, HR tech, renewable energy</div></div>
-          <div class="hcard hcard-c"><div class="hcard-n">B2B</div><div class="hcard-l">enterprise &amp; corporate focus</div></div>
-          <div class="hcard hcard-d"><div class="hcard-n">Istanbul</div><div class="hcard-l">open to EU opportunities</div></div>
+    </div>
+  </section>
+
+  <!-- Tool Stack Section -->
+  <section class="px-6 py-24 md:px-12">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-8 flex items-center gap-4 reveal">
+        <span class="text-gray-400">01</span>
+        <h2 class="text-3xl">My <span class="italic">stack</span></h2>
+      </div>
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 reveal">
+        <div class="rounded-2xl border-2 border-[#4646FF] bg-blue-50 p-6 text-center hover:bg-blue-100 transition-colors">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">AI Coding</div>
+          <div class="font-medium text-[#4646FF]">Cursor</div>
+        </div>
+        <div class="rounded-2xl border-2 border-purple-600 bg-purple-50 p-6 text-center hover:bg-purple-100 transition-colors">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">AI Core</div>
+          <div class="font-medium text-purple-600">Claude / GPT-4o</div>
+        </div>
+        <div class="rounded-2xl border-2 border-pink-600 bg-pink-50 p-6 text-center hover:bg-pink-100 transition-colors">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">Research</div>
+          <div class="font-medium text-pink-600">Perplexity</div>
+        </div>
+        <div class="rounded-2xl border-2 border-orange-600 bg-orange-50 p-6 text-center hover:bg-orange-100 transition-colors">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">Synthesis</div>
+          <div class="font-medium text-orange-600">NotebookLM</div>
+        </div>
+        <div class="rounded-2xl border-2 border-teal-600 bg-teal-50 p-6 text-center hover:bg-teal-100 transition-colors">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">Analytics</div>
+          <div class="font-medium text-teal-600">Amplitude</div>
+        </div>
+        <div class="rounded-2xl border-2 border-indigo-600 bg-indigo-50 p-6 text-center hover:bg-indigo-100 transition-colors">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">Design</div>
+          <div class="font-medium text-indigo-600">Figma</div>
+        </div>
+        <div class="rounded-2xl border-2 border-green-600 bg-green-50 p-6 text-center hover:bg-green-100 transition-colors">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">Product</div>
+          <div class="font-medium text-green-600">Pendo · ProductBoard</div>
+        </div>
+        <div class="rounded-2xl border-2 border-gray-800 bg-gray-50 p-6 text-center hover:bg-gray-100 transition-colors">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">Data &amp; Delivery</div>
+          <div class="font-medium text-gray-900">SQL · Jira · Miro</div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<div class="blob-strip"></div>
-<section id="about">
-  <div class="wrap">
-    <div class="sec-row reveal"><h2 class="sec-title">About <em>me</em></h2><span class="sec-num">01</span></div>
-    <div class="about-wrap">
-      <div class="about-body reveal">
-        <p>I'm a <strong>versatile product manager</strong> — put me in any industry and I'll roll up my sleeves, learn fast, and start contributing before you know it. I genuinely love the learning part.</p>
-        <p>What drives me is <strong>building products that create real value</strong>. My favourite work is at the very beginning: product discovery, problem definition, figuring out what's actually worth solving. I love sitting with a messy, complex problem and finding the shape of a solution inside it.</p>
-        <p>I'm experienced in <strong>zero-to-one product development</strong> — taking ideas from nothing to something people actually use. And I know how to navigate the stakeholder-heavy, cross-functional processes that come with building in large organizations without losing speed or clarity.</p>
-        <div class="about-pills">
-          <span class="apill apill-blue">Product discovery</span>
-          <span class="apill apill-yellow">Zero-to-one</span>
-          <span class="apill apill-coral">Continuous learner</span>
-          <span class="apill apill-blue">Complex problem solving</span>
-          <span class="apill apill-yellow">Stakeholder management</span>
-          <span class="apill apill-coral">Value-driven</span>
+  </section>
+
+  <!-- Selected Work Section -->
+  <section id="work" class="bg-gray-50 px-6 py-24 md:px-12">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-8 flex items-center gap-4 reveal">
+        <span class="text-gray-400">02</span>
+        <h2 class="text-3xl font-bold">Selected <span class="italic">work</span></h2>
+      </div>
+      <div class="space-y-8 reveal">
+
+        <!-- Project 1 - Intenseye -->
+        <div class="rounded-3xl bg-gradient-to-br from-purple-50 to-blue-50 p-8 shadow-sm border-2 border-purple-200">
+          <div class="mb-6 inline-block rounded-full bg-purple-600 px-4 py-2 text-sm text-white font-medium">
+            AI / LLM Product · Intenseye
+          </div>
+          <h3 class="mb-4 text-2xl">
+            Intenseye Chief — Conversational <span class="italic">AI Safety Platform</span>
+          </h3>
+          <p class="mb-6 max-w-3xl text-gray-700">
+            Led development and launch of Chief, an LLM-powered analytics platform automating manual safety reporting. Designed conversational UI for natural-language interaction with operational data. Ran GenAI POCs across OpenAI, Anthropic, and Gemini.
+          </p>
+          <div class="mb-6 flex flex-wrap gap-3">
+            <span class="rounded-full bg-purple-600 px-4 py-2 text-sm text-white font-medium">LLM / GenAI</span>
+            <span class="rounded-full bg-purple-600 px-4 py-2 text-sm text-white font-medium">Conversational UI</span>
+            <span class="rounded-full bg-purple-600 px-4 py-2 text-sm text-white font-medium">Enterprise B2B</span>
+            <span class="rounded-full bg-purple-600 px-4 py-2 text-sm text-white font-medium">Zero-to-one</span>
+          </div>
+          <div class="space-y-3 border-t-2 border-purple-200 pt-6">
+            <div class="text-sm font-bold text-purple-900">OUTCOMES</div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-800">
+                <span class="text-purple-600 text-lg">✓</span>
+                <span>Automated enterprise reporting</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-800">
+                <span class="text-purple-600 text-lg">✓</span>
+                <span>Improved decision-making speed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 2 - Garanti BBVA -->
+        <div class="rounded-3xl bg-gradient-to-br from-teal-50 to-green-50 p-8 shadow-sm border-2 border-teal-200">
+          <div class="mb-6 inline-block rounded-full bg-teal-600 px-4 py-2 text-sm text-white font-medium">
+            Investment Infrastructure · Garanti BBVA
+          </div>
+          <h3 class="mb-4 text-2xl">
+            Investment Domain — <span class="italic">Built from Zero</span>
+          </h3>
+          <p class="mb-6 max-w-3xl text-gray-700">
+            Built the investment domain for business banking from scratch. Managed API integrations with the Agricultural Stock Exchange, brokerage firms, National Central Securities Depository, and Custody Bank. Launched domestic and international equity trading on mobile and internet banking.
+          </p>
+          <div class="mb-6 flex flex-wrap gap-3">
+            <span class="rounded-full bg-teal-600 px-4 py-2 text-sm text-white font-medium">API integration</span>
+            <span class="rounded-full bg-teal-600 px-4 py-2 text-sm text-white font-medium">Regulated environment</span>
+            <span class="rounded-full bg-teal-600 px-4 py-2 text-sm text-white font-medium">Corporate banking</span>
+            <span class="rounded-full bg-teal-600 px-4 py-2 text-sm text-white font-medium">EWR / settlement</span>
+          </div>
+          <div class="space-y-3 border-t-2 border-teal-200 pt-6">
+            <div class="text-sm font-bold text-teal-900">OUTCOMES</div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-800">
+                <span class="text-teal-600 text-lg">✓</span>
+                <span>13% YoY increase in investment transaction volume</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 3 - 4D Sight -->
+        <div class="rounded-3xl bg-gradient-to-br from-orange-50 to-pink-50 p-8 shadow-sm border-2 border-orange-200">
+          <div class="mb-6 inline-block rounded-full bg-orange-600 px-4 py-2 text-sm text-white font-medium">
+            Marketplace · 4D Sight
+          </div>
+          <h3 class="mb-4 text-2xl">
+            Real-Time Ad Marketplace for <span class="italic">Sports &amp; Esports</span>
+          </h3>
+          <p class="mb-6 max-w-3xl text-gray-700">
+            Led end-to-end development of a real-time ad marketplace from zero, enabling direct collaboration between streamers and brands. Delivered MVP in 6 months. Built in-house product team from 0 to 5.
+          </p>
+          <div class="mb-6 flex flex-wrap gap-3">
+            <span class="rounded-full bg-orange-600 px-4 py-2 text-sm text-white font-medium">Zero-to-one</span>
+            <span class="rounded-full bg-orange-600 px-4 py-2 text-sm text-white font-medium">Marketplace</span>
+            <span class="rounded-full bg-orange-600 px-4 py-2 text-sm text-white font-medium">Team building 0→5</span>
+            <span class="rounded-full bg-orange-600 px-4 py-2 text-sm text-white font-medium">MVP in 6 months</span>
+          </div>
+          <div class="space-y-3 border-t-2 border-orange-200 pt-6">
+            <div class="text-sm font-bold text-orange-900">OUTCOMES</div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-800">
+                <span class="text-orange-600 text-lg">✓</span>
+                <span>Contributed to $65M increase in company valuation</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 4 - Kavaken -->
+        <div class="rounded-3xl bg-gradient-to-br from-rose-50 to-fuchsia-50 p-8 shadow-sm border-2 border-rose-200">
+          <div class="mb-6 inline-block rounded-full bg-rose-600 px-4 py-2 text-sm text-white font-medium">
+            AI / ML Product · Kavaken
+          </div>
+          <h3 class="mb-4 text-2xl">
+            AI Energy Optimization for <span class="italic">Renewable Investors</span>
+          </h3>
+          <p class="mb-6 max-w-3xl text-gray-700">
+            Led a cross-functional team of 8 data scientists and engineers delivering AI-powered energy optimization. Owned predictive maintenance, power optimization, sales forecasting, and outage monitoring modules.
+          </p>
+          <div class="mb-6 flex flex-wrap gap-3">
+            <span class="rounded-full bg-rose-600 px-4 py-2 text-sm text-white font-medium">AI / ML</span>
+            <span class="rounded-full bg-rose-600 px-4 py-2 text-sm text-white font-medium">Predictive maintenance</span>
+            <span class="rounded-full bg-rose-600 px-4 py-2 text-sm text-white font-medium">Forecasting</span>
+            <span class="rounded-full bg-rose-600 px-4 py-2 text-sm text-white font-medium">B2B</span>
+          </div>
+          <div class="space-y-3 border-t-2 border-rose-200 pt-6">
+            <div class="text-sm font-bold text-rose-900">OUTCOMES</div>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2 text-gray-800">
+                <span class="text-rose-600 text-lg">✓</span>
+                <span>Improved wind energy forecast accuracy</span>
+              </li>
+              <li class="flex items-start gap-2 text-gray-800">
+                <span class="text-rose-600 text-lg">✓</span>
+                <span>Early failure detection enabled</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Demos Section -->
+  <section id="demos" class="px-6 py-24 md:px-12 bg-white">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-8 flex items-center gap-4 reveal">
+        <span class="text-gray-400">03</span>
+        <h2 class="text-3xl">Demos &amp; <span class="italic">prototypes</span></h2>
+      </div>
+      <div class="space-y-0 reveal">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 py-5 border-t-2 border-gray-200">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="inline-block w-2 h-2 rounded-full bg-[#4646FF]"></span>
+              <span class="font-medium text-gray-900">FX Volatility Dashboard</span>
+            </div>
+            <div class="text-sm text-gray-600">Real-time currency risk visualization for treasury teams. Prototyped solo with Cursor + Claude.</div>
+          </div>
+          <div class="text-xs text-gray-400 whitespace-nowrap">React · Recharts · Claude API</div>
+          <a href="#" class="text-sm text-[#4646FF] font-medium border-b-2 border-[#4646FF] pb-0.5 self-start">coming soon</a>
+        </div>
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 py-5 border-t-2 border-gray-200">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="inline-block w-2 h-2 rounded-full bg-orange-500"></span>
+              <span class="font-medium text-gray-900">AI Product Brief Generator</span>
+            </div>
+            <div class="text-sm text-gray-600">Input a product idea, receive a structured PRD instantly. No backend — pure prompt engineering.</div>
+          </div>
+          <div class="text-xs text-gray-400 whitespace-nowrap">HTML · Claude API · Vanilla JS</div>
+          <a href="#" class="text-sm text-[#4646FF] font-medium border-b-2 border-[#4646FF] pb-0.5 self-start">coming soon</a>
+        </div>
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 py-5 border-t-2 border-b-2 border-gray-200">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="inline-block w-2 h-2 rounded-full bg-rose-500"></span>
+              <span class="font-medium text-gray-900">LLM Model Evaluation Tracker</span>
+            </div>
+            <div class="text-sm text-gray-600">Side-by-side output comparison across OpenAI, Anthropic, and Gemini. Built during Intenseye POC phase.</div>
+          </div>
+          <div class="text-xs text-gray-400 whitespace-nowrap">Python · Streamlit · Multi-model API</div>
+          <a href="#" class="text-sm text-[#4646FF] font-medium border-b-2 border-[#4646FF] pb-0.5 self-start">coming soon</a>
         </div>
       </div>
-      <div class="timeline reveal">
-        <div class="tl-row"><div class="tl-yr">2026 →</div><div><div class="tl-role"><span class="tl-dot" style="background:#1B3FE4"></span>Senior Lead PM, Enterprise</div><div class="tl-co">Garanti BBVA — Investment Domain</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2025</div><div><div class="tl-role"><span class="tl-dot" style="background:#1B3FE4"></span>Lead Product Manager</div><div class="tl-co">Garanti BBVA — Investment Domain</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2023 – 2024</div><div><div class="tl-role"><span class="tl-dot" style="background:#F25C4B"></span>Product Owner, AI/ML</div><div class="tl-co">Intenseye — Berlin, Remote</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2023</div><div><div class="tl-role"><span class="tl-dot" style="background:#F0336B"></span>Head of Product</div><div class="tl-co">TalentGrid</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2021 – 2022</div><div><div class="tl-role"><span class="tl-dot" style="background:#F5D130"></span>Senior Product Manager</div><div class="tl-co">4D Sight — Video Ad Marketplace</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2019 – 2021</div><div><div class="tl-role"><span class="tl-dot" style="background:#F25C4B"></span>Product Manager, AI/ML</div><div class="tl-co">Kavaken — Renewable Energy AI</div></div></div>
-        <div class="tl-row"><div class="tl-yr">2017 – 2019</div><div><div class="tl-role"><span class="tl-dot" style="background:#ccc"></span>Product Manager</div><div class="tl-co">Akbank &amp; Garanti BBVA</div></div></div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="px-6 py-24 md:px-12">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-12 flex items-center gap-4 reveal">
+        <span class="text-gray-400">04</span>
+        <h2 class="text-3xl">About <span class="italic">me</span></h2>
+      </div>
+      <div class="grid gap-16 md:grid-cols-2 reveal">
+        <!-- Timeline -->
+        <div class="space-y-8">
+          <div class="relative pl-8 border-l-4 border-[#4646FF]">
+            <div class="absolute -left-[11px] top-0 h-5 w-5 rounded-full bg-[#4646FF] border-4 border-white"></div>
+            <div class="pb-8">
+              <div class="text-sm font-bold text-[#4646FF] mb-2">2026 →</div>
+              <h4 class="font-bold text-lg mb-1 text-gray-900">Senior Lead PM, Enterprise</h4>
+              <p class="text-gray-600">Garanti BBVA — Investment Domain</p>
+            </div>
+          </div>
+          <div class="relative pl-8 border-l-4 border-[#4646FF]">
+            <div class="absolute -left-[11px] top-0 h-5 w-5 rounded-full bg-[#4646FF] border-4 border-white"></div>
+            <div class="pb-8">
+              <div class="text-sm font-bold text-[#4646FF] mb-2">2025</div>
+              <h4 class="font-bold text-lg mb-1 text-gray-900">Lead Product Manager</h4>
+              <p class="text-gray-600">Garanti BBVA — Investment Domain</p>
+            </div>
+          </div>
+          <div class="relative pl-8 border-l-4 border-[#4646FF]">
+            <div class="absolute -left-[11px] top-0 h-5 w-5 rounded-full bg-[#4646FF] border-4 border-white"></div>
+            <div class="pb-8">
+              <div class="text-sm font-bold text-[#4646FF] mb-2">2023 – 2024</div>
+              <h4 class="font-bold text-lg mb-1 text-gray-900">Product Owner, AI/ML</h4>
+              <p class="text-gray-600">Intenseye — Berlin, Remote</p>
+            </div>
+          </div>
+          <div class="relative pl-8 border-l-4 border-[#4646FF]">
+            <div class="absolute -left-[11px] top-0 h-5 w-5 rounded-full bg-[#4646FF] border-4 border-white"></div>
+            <div class="pb-8">
+              <div class="text-sm font-bold text-[#4646FF] mb-2">2023</div>
+              <h4 class="font-bold text-lg mb-1 text-gray-900">Head of Product</h4>
+              <p class="text-gray-600">TalentGrid</p>
+            </div>
+          </div>
+          <div class="relative pl-8 border-l-4 border-[#4646FF]">
+            <div class="absolute -left-[11px] top-0 h-5 w-5 rounded-full bg-[#4646FF] border-4 border-white"></div>
+            <div class="pb-8">
+              <div class="text-sm font-bold text-[#4646FF] mb-2">2021 – 2022</div>
+              <h4 class="font-bold text-lg mb-1 text-gray-900">Senior Product Manager</h4>
+              <p class="text-gray-600">4D Sight — Video Ad Marketplace</p>
+            </div>
+          </div>
+          <div class="relative pl-8 border-l-4 border-[#4646FF]">
+            <div class="absolute -left-[11px] top-0 h-5 w-5 rounded-full bg-[#4646FF] border-4 border-white"></div>
+            <div class="pb-8">
+              <div class="text-sm font-bold text-[#4646FF] mb-2">2019 – 2021</div>
+              <h4 class="font-bold text-lg mb-1 text-gray-900">Product Manager, AI/ML</h4>
+              <p class="text-gray-600">Kavaken — Renewable Energy AI</p>
+            </div>
+          </div>
+          <div class="relative pl-8 border-l-4 border-gray-300">
+            <div class="absolute -left-[11px] top-0 h-5 w-5 rounded-full bg-gray-300 border-4 border-white"></div>
+            <div>
+              <div class="text-sm font-bold text-gray-500 mb-2">2017 – 2019</div>
+              <h4 class="font-bold text-lg mb-1 text-gray-900">Product Manager</h4>
+              <p class="text-gray-600">Akbank &amp; Garanti BBVA</p>
+            </div>
+          </div>
+        </div>
+        <!-- About Text & Skills -->
+        <div>
+          <div class="space-y-4 mb-8">
+            <p class="text-gray-700 leading-relaxed">I'm a <strong class="text-gray-900">versatile product manager</strong> — put me in any industry and I'll roll up my sleeves, learn fast, and start contributing before you know it. I genuinely love the learning part.</p>
+            <p class="text-gray-700 leading-relaxed">What drives me is <strong class="text-gray-900">building products that create real value</strong>. My favourite work is at the very beginning: product discovery, problem definition, figuring out what's actually worth solving.</p>
+            <p class="text-gray-700 leading-relaxed">I'm experienced in <strong class="text-gray-900">zero-to-one product development</strong> — taking ideas from nothing to something people actually use. And I know how to navigate the stakeholder-heavy, cross-functional processes that come with building in large organizations without losing speed or clarity.</p>
+          </div>
+          <h3 class="mb-6 text-xl font-bold">Core Expertise</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="mb-2 flex justify-between text-sm">
+                <span class="font-medium text-gray-900">Product Discovery</span>
+                <span class="text-gray-500">Expert</span>
+              </div>
+              <div class="h-2 rounded-full bg-gray-200">
+                <div class="h-2 rounded-full bg-[#4646FF]" style="width:95%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="mb-2 flex justify-between text-sm">
+                <span class="font-medium text-gray-900">Zero-to-One Development</span>
+                <span class="text-gray-500">Expert</span>
+              </div>
+              <div class="h-2 rounded-full bg-gray-200">
+                <div class="h-2 rounded-full bg-[#4646FF]" style="width:92%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="mb-2 flex justify-between text-sm">
+                <span class="font-medium text-gray-900">Stakeholder Management</span>
+                <span class="text-gray-500">Advanced</span>
+              </div>
+              <div class="h-2 rounded-full bg-gray-200">
+                <div class="h-2 rounded-full bg-[#4646FF]" style="width:88%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="mb-2 flex justify-between text-sm">
+                <span class="font-medium text-gray-900">AI / LLM Products</span>
+                <span class="text-gray-500">Advanced</span>
+              </div>
+              <div class="h-2 rounded-full bg-gray-200">
+                <div class="h-2 rounded-full bg-[#4646FF]" style="width:85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="mb-2 flex justify-between text-sm">
+                <span class="font-medium text-gray-900">Complex Problem Solving</span>
+                <span class="text-gray-500">Expert</span>
+              </div>
+              <div class="h-2 rounded-full bg-gray-200">
+                <div class="h-2 rounded-full bg-[#4646FF]" style="width:90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<div class="work-section">
-  <div class="work-inner">
-    <div class="sec-row reveal"><h2 class="sec-title">Selected <em>work</em></h2><span class="sec-num">02</span></div>
-    <div class="proj-grid reveal">
-      <div class="proj"><div class="proj-accent" style="background:#F25C4B"></div><div class="proj-type">AI / LLM Product · Intenseye</div><div class="proj-title">Intenseye Chief — Conversational AI Safety Platform</div><div class="proj-desc">Led development and launch of Chief, an LLM-powered analytics platform automating manual safety reporting. Designed conversational UI for natural-language interaction with operational data. Ran GenAI POCs across OpenAI, Anthropic, and Gemini.</div><div class="proj-tags"><span class="proj-tag">LLM / GenAI</span><span class="proj-tag">Conversational UI</span><span class="proj-tag">Enterprise B2B</span><span class="proj-tag">Zero-to-one</span></div><div class="proj-metric">Outcome — <span>automated enterprise reporting; improved decision-making speed</span></div></div>
-      <div class="proj"><div class="proj-accent" style="background:#1B3FE4"></div><div class="proj-type">Investment Infrastructure · Garanti BBVA</div><div class="proj-title">Investment Domain — Built from Zero</div><div class="proj-desc">Built the investment domain for business banking from scratch. Managed API integrations with the Agricultural Stock Exchange, brokerage firms, National Central Securities Depository, and Custody Bank. Launched domestic and international equity trading on mobile and internet banking.</div><div class="proj-tags"><span class="proj-tag">API integration</span><span class="proj-tag">Regulated environment</span><span class="proj-tag">Corporate banking</span><span class="proj-tag">EWR / settlement</span></div><div class="proj-metric">Outcome — <span>13% YoY increase in investment transaction volume</span></div></div>
-      <div class="proj"><div class="proj-accent" style="background:#F5D130"></div><div class="proj-type">Marketplace · 4D Sight</div><div class="proj-title">Real-Time Ad Marketplace for Sports &amp; Esports</div><div class="proj-desc">Led end-to-end development of a real-time ad marketplace from zero, enabling direct collaboration between streamers and brands. Delivered MVP in 6 months. Built in-house product team from 0 to 5.</div><div class="proj-tags"><span class="proj-tag">Zero-to-one</span><span class="proj-tag">Marketplace</span><span class="proj-tag">Team building 0→5</span><span class="proj-tag">MVP in 6 months</span></div><div class="proj-metric">Outcome — <span>contributed to $65M increase in company valuation</span></div></div>
-      <div class="proj"><div class="proj-accent" style="background:#F0336B"></div><div class="proj-type">AI / ML Product · Kavaken</div><div class="proj-title">AI Energy Optimization for Renewable Investors</div><div class="proj-desc">Led a cross-functional team of 8 data scientists and engineers delivering AI-powered energy optimization. Owned predictive maintenance, power optimization, sales forecasting, and outage monitoring modules.</div><div class="proj-tags"><span class="proj-tag">AI / ML</span><span class="proj-tag">Predictive maintenance</span><span class="proj-tag">Forecasting</span><span class="proj-tag">B2B</span></div><div class="proj-metric">Outcome — <span>improved wind energy forecast accuracy; early failure detection enabled</span></div></div>
-    </div>
-  </div>
-</div>
-<section id="demos">
-  <div class="wrap">
-    <div class="sec-row reveal"><h2 class="sec-title">Demos &amp; <em>prototypes</em></h2><span class="sec-num">03</span></div>
-    <div class="reveal">
-      <div class="demo-row"><div><div class="demo-title"><span class="demo-dot" style="background:#1B3FE4"></span>FX Volatility Dashboard</div><div class="demo-desc">Real-time currency risk visualization for treasury teams. Prototyped solo with Cursor + Claude.</div></div><div class="demo-tech">React · Recharts · Claude API</div><a class="demo-link" href="#" target="_blank">coming soon</a></div>
-      <div class="demo-row"><div><div class="demo-title"><span class="demo-dot" style="background:#F25C4B"></span>AI Product Brief Generator</div><div class="demo-desc">Input a product idea, receive a structured PRD instantly. No backend — pure prompt engineering.</div></div><div class="demo-tech">HTML · Claude API · Vanilla JS</div><a class="demo-link" href="#" target="_blank">coming soon</a></div>
-      <div class="demo-row"><div><div class="demo-title"><span class="demo-dot" style="background:#F0336B"></span>LLM Model Evaluation Tracker</div><div class="demo-desc">Side-by-side output comparison across OpenAI, Anthropic, and Gemini. Built during Intenseye POC phase.</div></div><div class="demo-tech">Python · Streamlit · Multi-model API</div><a class="demo-link" href="#" target="_blank">coming soon</a></div>
-    </div>
-  </div>
-</section>
-<div id="stack" style="padding: 5rem 0;">
-  <div class="stack-section">
-    <div class="sec-row reveal"><h2 class="sec-title" style="color:#FAFAF5">Tool <em style="color:#F5D130">stack</em></h2><span class="sec-num" style="color:rgba(255,255,255,0.3)">04</span></div>
-    <div class="stack-grid reveal">
-      <div class="stack-card"><div class="stack-cat">AI coding</div><div class="stack-name">Cursor</div></div>
-      <div class="stack-card"><div class="stack-cat">AI core</div><div class="stack-name">Claude / GPT-4o</div></div>
-      <div class="stack-card"><div class="stack-cat">Research</div><div class="stack-name">Perplexity</div></div>
-      <div class="stack-card"><div class="stack-cat">Synthesis</div><div class="stack-name">NotebookLM</div></div>
-      <div class="stack-card"><div class="stack-cat">Analytics</div><div class="stack-name">Amplitude</div></div>
-      <div class="stack-card"><div class="stack-cat">Design</div><div class="stack-name">Figma</div></div>
-      <div class="stack-card"><div class="stack-cat">Product</div><div class="stack-name">Pendo · ProductBoard</div></div>
-      <div class="stack-card"><div class="stack-cat">Data &amp; delivery</div><div class="stack-name">SQL · Jira · Miro</div></div>
-    </div>
-  </div>
-</div>
-<section id="contact">
-  <div class="wrap">
-    <div class="sec-row reveal"><h2 class="sec-title">Get in <em>touch</em></h2><span class="sec-num">05</span></div>
-    <div class="contact-blob reveal">
-      <div>
-        <h2 class="contact-h">Open to the<br>right <em>opportunity.</em></h2>
-        <p class="contact-sub">Looking for AI PM, Senior PM, or Head of Product roles — remote or on-site. Based in Istanbul, open to relocation. 8+ years of shipped product across fintech, AI, and enterprise B2B.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="px-6 py-24 md:px-12 bg-[#FFF04D]">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-8 flex items-center gap-4 reveal">
+        <span class="text-gray-700">05</span>
+        <h2 class="text-3xl">Let's get in <span class="italic">touch</span></h2>
       </div>
-      <div>
-        <a class="clink" href="https://www.linkedin.com/in/mervesalmaz/" target="_blank"><span>linkedin.com/in/mervesalmaz</span><span class="clink-arr">↗</span></a>
+      <div class="grid gap-8 md:grid-cols-2 reveal">
+        <div>
+          <p class="mb-8 text-xl text-gray-800 max-w-xl">
+            Open to the right <span class="italic">opportunity</span>. Looking for AI PM, Senior PM, or Head of Product roles — remote or on-site.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/mervesalmaz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-3 rounded-full bg-gray-900 px-8 py-5 text-white hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
+            <!-- LinkedIn icon -->
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span class="text-lg font-bold">Connect on LinkedIn</span>
+            <!-- Arrow icon -->
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </div>
+        <div class="rounded-3xl bg-white/50 backdrop-blur-sm p-8 border-2 border-gray-900">
+          <h3 class="mb-6 text-xl font-bold">Quick Facts</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">📍</span>
+              <div>
+                <div class="font-medium">Location</div>
+                <div class="text-gray-700">Istanbul, Turkey</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">💼</span>
+              <div>
+                <div class="font-medium">Open to</div>
+                <div class="text-gray-700">AI PM, Senior PM, Head of Product</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">🌍</span>
+              <div>
+                <div class="font-medium">Relocation</div>
+                <div class="text-gray-700">Open to EU opportunities</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-2xl">🚀</span>
+              <div>
+                <div class="font-medium">Experience</div>
+                <div class="text-gray-700">8+ years across fintech, AI &amp; enterprise B2B</div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<div class="wrap">
-  <footer>
-    <p>Merve Salmaz — Senior Product Manager</p>
-    <p>Built with Claude · 2025</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 px-6 py-12 text-white md:px-12">
+    <div class="mx-auto max-w-6xl text-center">
+      <p class="text-gray-400">
+        © 2025 Merve Salmaz. Built with Claude.
+      </p>
+    </div>
   </footer>
-</div>
+
 <script>
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
