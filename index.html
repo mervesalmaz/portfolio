@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merve Salmaz — Senior Product Manager</title>
+<meta name="description" content="Senior Product Manager with 8+ years in fintech and AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', system-ui, sans-serif; background: #FAFAF5; color: #0E1B2C; font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 3rem); }
+nav { background: #1B3FE4; position: sticky; top: 0; z-index: 100; }
+nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 58px; }
+.nav-name { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-size: 1.1rem; color: #F5D130; }
+.nav-links { display: flex; gap: 1.75rem; list-style: none; }
+.nav-links a { font-size: 0.78rem; letter-spacing: 0.05em; color: rgba(255,255,255,0.65); text-decoration: none; }
+.nav-links a:hover { color: #F5D130; }
+.nav-cta { background: #F5D130; color: #0E1B2C; font-size: 0.78rem; font-weight: 500; text-decoration: none; padding: 0.45rem 1.1rem; border-radius: 100px; }
+.nav-cta:hover { opacity: 0.85; }
+#hero { background: #1B3FE4; padding: 5rem 0 0; }
+.hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: end; }
+.hero-tag { display: inline-block; background: #F5D130; color: #0E1B2C; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em; padding: 0.35rem 0.85rem; border-radius: 100px; margin-bottom: 1.5rem; }
+.hero-h1 { font-family: 'Fraunces', Georgia, serif; font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; color: #FAFAF5; margin-bottom: 0.75rem; }
+.hero-h1 em { font-style: italic; color: #F5D130; font-weight: 400; }
+.hero-sub { font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 2rem; max-width: 420px; }
+.hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 3rem; }
+.btn-solid { background: #F5D130; color: #0E1B2C; font-size: 0.82rem; font-weight: 500; padding: 0.65rem 1.5rem; border-radius: 100px; text-decoration: none; }
+.btn-solid:hover { opacity: 0.85; }
+.btn-outline { background: transparent; color: #FAFAF5; font-size: 0.82rem; padding: 0.65rem 1.5rem; border-radius: 100px; text-decoration: none; border: 1.5px solid rgba(255,255,255,0.35); }
+.hero-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.hcard { border-radius: 16px; padding: 1.5rem; }
+.hcard-a { background: #F5D130; }
+.hcard-b { background: #F25C4B; }
+.hcard-c { background: rgba(255,255,255,0.1); border: 1.5px solid rgba(255,255,255,0.18); }
+.hcard-d { background: #F0336B; }
+.hcard-n { font-family: 'Fraunces', Georgia, serif; font-size: 2rem; font-weight: 700; line-height: 1; margin-bottom: 0.35rem; }
+.hcard-a .hcard-n { color: #0E1B2C; } .hcard-a .hcard-l { color: #0E1B2C; }
+.hcard-b .hcard-n { color: #FAFAF5; } .hcard-b .hcard-l { color: #FAFAF5; }
+.hcard-c .hcard-n { color: #F5D130; font-style: italic; font-size: 1.4rem; } .hcard-c .hcard-l { color: rgba(255,255,255,0.6); }
+.hcard-d .hcard-n { color: #FAFAF5; font-style: italic; font-size: 1.3rem; } .hcard-d .hcard-l { color: #FAFAF5; }
+.hcard-l { font-size: 0.7rem; letter-spacing: 0.05em; line-height: 1.4; }
+.blob-strip { background: #1B3FE4; height: 3rem; position: relative; overflow: hidden; }
+.blob-strip::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100%; background: #FAFAF5; border-radius: 40px 40px 0 0; }
+section { padding: 5rem 0; }
+.sec-row { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 2.5rem; }
+.sec-title { font-family: 'Fraunces', Georgia, serif; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em; color: #0E1B2C; }
+.sec-title em { font-style: italic; color: #1B3FE4; font-weight: 400; }
+.sec-num { font-size: 0.7rem; letter-spacing: 0.1em; color: #aaa; }
+.about-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.about-body p { font-size: 0.9rem; color: #444; line-height: 1.9; margin-bottom: 0.9rem; }
+.about-body strong { color: #0E1B2C; font-weight: 500; }
+.about-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+.apill { font-size: 0.72rem; letter-spacing: 0.04em; padding: 0.35rem 0.85rem; border-radius: 100px; font-weight: 500; }
+.apill-blue { background: #1B3FE4; color: #FAFAF5; }
+.apill-yellow { background: #F5D130; color: #0E1B2C; }
+.apill-coral { background: #F25C4B; color: #FAFAF5; }
+.tl-row { display: grid; grid-template-columns: 110px 1fr; gap: 1rem; padding: 0.9rem 0; border-bottom: 1.5px solid #EEEEE6; align-items: start; }
+.tl-row:first-child { border-top: 1.5px solid #EEEEE6; }
+.tl-yr { font-size: 0.7rem; color: #aaa; letter-spacing: 0.04em; padding-top: 2px; }
+.tl-role { font-size: 0.88rem; font-weight: 500; color: #0E1B2C; margin-bottom: 0.15rem; }
+.tl-co { font-size: 0.76rem; color: #888; }
+.tl-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 0.4rem; vertical-align: middle; position: relative; top: -1px; }
+.work-section { background: #F4F3EE; border-radius: 24px; margin: 0 clamp(1.25rem, 5vw, 3rem); }
+.work-inner { padding: 4rem 3rem; }
+.proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.proj { border-radius: 16px; padding: 2rem; border: 1.5px solid #E8E7E0; background: #FAFAF5; transition: border-color 0.2s, transform 0.2s; }
+.proj:hover { border-color: #1B3FE4; transform: translateY(-2px); }
+.proj-accent { width: 32px; height: 4px; border-radius: 2px; margin-bottom: 1.25rem; }
+.proj-type { font-size: 0.68rem; letter-spacing: 0.09em; color: #aaa; text-transform: uppercase; margin-bottom: 0.65rem; }
+.proj-title { font-family: 'Fraunces', Georgia, serif; font-size: 1.1rem; font-weight: 700; line-height: 1.25; margin-bottom: 0.75rem; color: #0E1B2C; }
+.proj-desc { font-size: 0.82rem; color: #555; line-height: 1.75; margin-bottom: 1.25rem; }
+.proj-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1.25rem; }
+.proj-tag { font-size: 0.66rem; letter-spacing: 0.04em; padding: 0.2rem 0.6rem; border-radius: 100px; border: 1.5px solid #E0DFD8; color: #777; }
+.proj-metric { font-size: 0.78rem; color: #555; padding-top: 0.85rem; border-top: 1.5px solid #EEEEE6; }
+.proj-metric span { color: #0E1B2C; font-weight: 500; }
+.demo-row { display: grid; grid-template-columns: 2fr 1.5fr auto; gap: 2rem; align-items: center; padding: 1.25rem 0; border-bottom: 1.5px solid #EEEEE6; }
+.demo-row:first-child { border-top: 1.5px solid #EEEEE6; }
+.demo-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 0.5rem; vertical-align: middle; position: relative; top: -1px; }
+.demo-title { font-size: 0.9rem; font-weight: 500; color: #0E1B2C; margin-bottom: 0.25rem; }
+.demo-desc { font-size: 0.8rem; color: #666; line-height: 1.6; }
+.demo-tech { font-size: 0.7rem; color: #aaa; line-height: 1.65; }
+.demo-link { font-size: 0.78rem; color: #1B3FE4; text-decoration: none; font-weight: 500; white-space: nowrap; border-bottom: 1.5px solid #1B3FE4; padding-bottom: 1px; }
+.stack-section { background: #1B3FE4; border-radius: 24px; margin: 0 clamp(1.25rem, 5vw, 3rem); padding: 3.5rem; }
+.stack-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+.stack-card { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 1.1rem 1rem; border: 1.5px solid rgba(255,255,255,0.12); }
+.stack-cat { font-size: 0.65rem; letter-spacing: 0.08em; color: rgba(255,255,255,0.45); margin-bottom: 0.4rem; text-transform: uppercase; }
+.stack-name { font-size: 0.88rem; font-weight: 500; color: #FAFAF5; }
+.contact-blob { background: #F5D130; border-radius: 24px; padding: 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.contact-h { font-family: 'Fraunces', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700; letter-spacing: -0.02em; color: #0E1B2C; line-height: 1.1; margin-bottom: 0.85rem; }
+.contact-h em { font-style: italic; font-weight: 400; }
+.contact-sub { font-size: 0.88rem; color: rgba(14,27,44,0.65); line-height: 1.75; }
+.clink { display: flex; justify-content: space-between; align-items: center; font-size: 0.88rem; color: #0E1B2C; text-decoration: none; padding: 1rem 0; border-bottom: 1.5px solid rgba(14,27,44,0.15); }
+.clink:first-child { border-top: 1.5px solid rgba(14,27,44,0.15); }
+.clink:hover { opacity: 0.6; }
+.clink-arr { color: rgba(14,27,44,0.4); }
+footer { padding: 1.75rem 0; display: flex; justify-content: space-between; }
+footer p { font-size: 0.73rem; color: #bbb; }
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+@media (max-width: 768px) {
+  .hero-inner, .about-wrap, .contact-blob { grid-template-columns: 1fr; }
+  .hero-cards { grid-template-columns: 1fr 1fr; }
+  .proj-grid { grid-template-columns: 1fr; }
+  .stack-grid { grid-template-columns: repeat(2, 1fr); }
+  .demo-row { grid-template-columns: 1fr; gap: 0.5rem; }
+  .work-inner { padding: 2.5rem 1.5rem; }
+  .stack-section, .work-section { margin: 0; border-radius: 0; }
+  .contact-blob { padding: 2.5rem; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <span class="nav-name">Merve Salmaz</span>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#demos">demos</a></li>
+      <li><a href="#stack">stack</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">get in touch</a>
+  </div>
+</nav>
+<section id="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-tag">Senior Product Manager — Fintech &amp; AI</span>
+        <h1 class="hero-h1">8 years shipping<br>products at the<br>edge of <em>AI &amp; fintech.</em></h1>
+        <p class="hero-sub">From LLM-powered safety platforms to investment infrastructure at scale — I build products at the intersection of complex systems, real users, and emerging technology.</p>
+        <div class="hero-btns">
+          <a class="btn-solid" href="#work">See my work</a>
+          <a class="btn-outline" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div>
+        <div class="hero-cards">
+          <div class="hcard hcard-a"><div class="hcard-n">8+</div><div class="hcard-l">years in product</div></div>
+          <div class="hcard hcard-b"><div class="hcard-n">4</div><div class="hcard-l">industries: fintech, AI, HR tech, renewable energy</div></div>
+          <div class="hcard hcard-c"><div class="hcard-n">B2B</div><div class="hcard-l">enterprise &amp; corporate focus</div></div>
+          <div class="hcard hcard-d"><div class="hcard-n">Istanbul</div><div class="hcard-l">open to EU opportunities</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="blob-strip"></div>
+<section id="about">
+  <div class="wrap">
+    <div class="sec-row reveal"><h2 class="sec-title">About <em>me</em></h2><span class="sec-num">01</span></div>
+    <div class="about-wrap">
+      <div class="about-body reveal">
+        <p>I'm a <strong>versatile product manager</strong> — put me in any industry and I'll roll up my sleeves, learn fast, and start contributing before you know it. I genuinely love the learning part.</p>
+        <p>What drives me is <strong>building products that create real value</strong>. My favourite work is at the very beginning: product discovery, problem definition, figuring out what's actually worth solving. I love sitting with a messy, complex problem and finding the shape of a solution inside it.</p>
+        <p>I'm experienced in <strong>zero-to-one product development</strong> — taking ideas from nothing to something people actually use. And I know how to navigate the stakeholder-heavy, cross-functional processes that come with building in large organizations without losing speed or clarity.</p>
+        <div class="about-pills">
+          <span class="apill apill-blue">Product discovery</span>
+          <span class="apill apill-yellow">Zero-to-one</span>
+          <span class="apill apill-coral">Continuous learner</span>
+          <span class="apill apill-blue">Complex problem solving</span>
+          <span class="apill apill-yellow">Stakeholder management</span>
+          <span class="apill apill-coral">Value-driven</span>
+        </div>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-row"><div class="tl-yr">2026 →</div><div><div class="tl-role"><span class="tl-dot" style="background:#1B3FE4"></span>Senior Lead PM, Enterprise</div><div class="tl-co">Garanti BBVA — Investment Domain</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2025</div><div><div class="tl-role"><span class="tl-dot" style="background:#1B3FE4"></span>Lead Product Manager</div><div class="tl-co">Garanti BBVA — Investment Domain</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2023 – 2024</div><div><div class="tl-role"><span class="tl-dot" style="background:#F25C4B"></span>Product Owner, AI/ML</div><div class="tl-co">Intenseye — Berlin, Remote</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2023</div><div><div class="tl-role"><span class="tl-dot" style="background:#F0336B"></span>Head of Product</div><div class="tl-co">TalentGrid</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2021 – 2022</div><div><div class="tl-role"><span class="tl-dot" style="background:#F5D130"></span>Senior Product Manager</div><div class="tl-co">4D Sight — Video Ad Marketplace</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2019 – 2021</div><div><div class="tl-role"><span class="tl-dot" style="background:#F25C4B"></span>Product Manager, AI/ML</div><div class="tl-co">Kavaken — Renewable Energy AI</div></div></div>
+        <div class="tl-row"><div class="tl-yr">2017 – 2019</div><div><div class="tl-role"><span class="tl-dot" style="background:#ccc"></span>Product Manager</div><div class="tl-co">Akbank &amp; Garanti BBVA</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="work-section">
+  <div class="work-inner">
+    <div class="sec-row reveal"><h2 class="sec-title">Selected <em>work</em></h2><span class="sec-num">02</span></div>
+    <div class="proj-grid reveal">
+      <div class="proj"><div class="proj-accent" style="background:#F25C4B"></div><div class="proj-type">AI / LLM Product · Intenseye</div><div class="proj-title">Intenseye Chief — Conversational AI Safety Platform</div><div class="proj-desc">Led development and launch of Chief, an LLM-powered analytics platform automating manual safety reporting. Designed conversational UI for natural-language interaction with operational data. Ran GenAI POCs across OpenAI, Anthropic, and Gemini.</div><div class="proj-tags"><span class="proj-tag">LLM / GenAI</span><span class="proj-tag">Conversational UI</span><span class="proj-tag">Enterprise B2B</span><span class="proj-tag">Zero-to-one</span></div><div class="proj-metric">Outcome — <span>automated enterprise reporting; improved decision-making speed</span></div></div>
+      <div class="proj"><div class="proj-accent" style="background:#1B3FE4"></div><div class="proj-type">Investment Infrastructure · Garanti BBVA</div><div class="proj-title">Investment Domain — Built from Zero</div><div class="proj-desc">Built the investment domain for business banking from scratch. Managed API integrations with the Agricultural Stock Exchange, brokerage firms, National Central Securities Depository, and Custody Bank. Launched domestic and international equity trading on mobile and internet banking.</div><div class="proj-tags"><span class="proj-tag">API integration</span><span class="proj-tag">Regulated environment</span><span class="proj-tag">Corporate banking</span><span class="proj-tag">EWR / settlement</span></div><div class="proj-metric">Outcome — <span>13% YoY increase in investment transaction volume</span></div></div>
+      <div class="proj"><div class="proj-accent" style="background:#F5D130"></div><div class="proj-type">Marketplace · 4D Sight</div><div class="proj-title">Real-Time Ad Marketplace for Sports &amp; Esports</div><div class="proj-desc">Led end-to-end development of a real-time ad marketplace from zero, enabling direct collaboration between streamers and brands. Delivered MVP in 6 months. Built in-house product team from 0 to 5.</div><div class="proj-tags"><span class="proj-tag">Zero-to-one</span><span class="proj-tag">Marketplace</span><span class="proj-tag">Team building 0→5</span><span class="proj-tag">MVP in 6 months</span></div><div class="proj-metric">Outcome — <span>contributed to $65M increase in company valuation</span></div></div>
+      <div class="proj"><div class="proj-accent" style="background:#F0336B"></div><div class="proj-type">AI / ML Product · Kavaken</div><div class="proj-title">AI Energy Optimization for Renewable Investors</div><div class="proj-desc">Led a cross-functional team of 8 data scientists and engineers delivering AI-powered energy optimization. Owned predictive maintenance, power optimization, sales forecasting, and outage monitoring modules.</div><div class="proj-tags"><span class="proj-tag">AI / ML</span><span class="proj-tag">Predictive maintenance</span><span class="proj-tag">Forecasting</span><span class="proj-tag">B2B</span></div><div class="proj-metric">Outcome — <span>improved wind energy forecast accuracy; early failure detection enabled</span></div></div>
+    </div>
+  </div>
+</div>
+<section id="demos">
+  <div class="wrap">
+    <div class="sec-row reveal"><h2 class="sec-title">Demos &amp; <em>prototypes</em></h2><span class="sec-num">03</span></div>
+    <div class="reveal">
+      <div class="demo-row"><div><div class="demo-title"><span class="demo-dot" style="background:#1B3FE4"></span>FX Volatility Dashboard</div><div class="demo-desc">Real-time currency risk visualization for treasury teams. Prototyped solo with Cursor + Claude.</div></div><div class="demo-tech">React · Recharts · Claude API</div><a class="demo-link" href="#" target="_blank">coming soon</a></div>
+      <div class="demo-row"><div><div class="demo-title"><span class="demo-dot" style="background:#F25C4B"></span>AI Product Brief Generator</div><div class="demo-desc">Input a product idea, receive a structured PRD instantly. No backend — pure prompt engineering.</div></div><div class="demo-tech">HTML · Claude API · Vanilla JS</div><a class="demo-link" href="#" target="_blank">coming soon</a></div>
+      <div class="demo-row"><div><div class="demo-title"><span class="demo-dot" style="background:#F0336B"></span>LLM Model Evaluation Tracker</div><div class="demo-desc">Side-by-side output comparison across OpenAI, Anthropic, and Gemini. Built during Intenseye POC phase.</div></div><div class="demo-tech">Python · Streamlit · Multi-model API</div><a class="demo-link" href="#" target="_blank">coming soon</a></div>
+    </div>
+  </div>
+</section>
+<div id="stack" style="padding: 5rem 0;">
+  <div class="stack-section">
+    <div class="sec-row reveal"><h2 class="sec-title" style="color:#FAFAF5">Tool <em style="color:#F5D130">stack</em></h2><span class="sec-num" style="color:rgba(255,255,255,0.3)">04</span></div>
+    <div class="stack-grid reveal">
+      <div class="stack-card"><div class="stack-cat">AI coding</div><div class="stack-name">Cursor</div></div>
+      <div class="stack-card"><div class="stack-cat">AI core</div><div class="stack-name">Claude / GPT-4o</div></div>
+      <div class="stack-card"><div class="stack-cat">Research</div><div class="stack-name">Perplexity</div></div>
+      <div class="stack-card"><div class="stack-cat">Synthesis</div><div class="stack-name">NotebookLM</div></div>
+      <div class="stack-card"><div class="stack-cat">Analytics</div><div class="stack-name">Amplitude</div></div>
+      <div class="stack-card"><div class="stack-cat">Design</div><div class="stack-name">Figma</div></div>
+      <div class="stack-card"><div class="stack-cat">Product</div><div class="stack-name">Pendo · ProductBoard</div></div>
+      <div class="stack-card"><div class="stack-cat">Data &amp; delivery</div><div class="stack-name">SQL · Jira · Miro</div></div>
+    </div>
+  </div>
+</div>
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-row reveal"><h2 class="sec-title">Get in <em>touch</em></h2><span class="sec-num">05</span></div>
+    <div class="contact-blob reveal">
+      <div>
+        <h2 class="contact-h">Open to the<br>right <em>opportunity.</em></h2>
+        <p class="contact-sub">Looking for AI PM, Senior PM, or Head of Product roles — remote or on-site. Based in Istanbul, open to relocation. 8+ years of shipped product across fintech, AI, and enterprise B2B.</p>
+      </div>
+      <div>
+        <a class="clink" href="https://www.linkedin.com/in/mervesalmaz/" target="_blank"><span>linkedin.com/in/mervesalmaz</span><span class="clink-arr">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+  <footer>
+    <p>Merve Salmaz — Senior Product Manager</p>
+    <p>Built with Claude · 2025</p>
+  </footer>
+</div>
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }, 800);
+</script>
+</body>
+</html>
